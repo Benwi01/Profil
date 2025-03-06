@@ -17,23 +17,38 @@ const Home = () => (
 );
 
 const Projects = () => (
-  <section id="projects" className="section">
+  <section id="projects" className="section projects-section">
     <h1>Projects</h1>
     <div className="projects-grid">
       <div className="project-card">
         <h2>Project 1</h2>
         <p>Description of Project 1.</p>
-        <a href="#project1">View Project</a>
+        <div className="project-buttons">
+          <a href="https://github.com/yourusername/project1" className="btn github-btn" target="_blank" rel="noopener noreferrer">
+            <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
+          </a>
+          <a href="#project1" className="btn view-btn">View Project</a>
+        </div>
       </div>
       <div className="project-card">
         <h2>Project 2</h2>
         <p>Description of Project 2.</p>
-        <a href="#project2">View Project</a>
+        <div className="project-buttons">
+          <a href="https://github.com/yourusername/project2" className="btn github-btn" target="_blank" rel="noopener noreferrer">
+            <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
+          </a>
+          <a href="#project2" className="btn view-btn">View Project</a>
+        </div>
       </div>
       <div className="project-card">
         <h2>Project 3</h2>
         <p>Description of Project 3.</p>
-        <a href="#project3">View Project</a>
+        <div className="project-buttons">
+          <a href="https://github.com/yourusername/project3" className="btn github-btn" target="_blank" rel="noopener noreferrer">
+            <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
+          </a>
+          <a href="#project3" className="btn view-btn">View Project</a>
+        </div>
       </div>
       {/* Add more project cards as needed */}
     </div>
@@ -41,7 +56,7 @@ const Projects = () => (
 );
 
 const Contact = () => (
-  <section id="contact" className="section">
+  <section id="contact" className="section contact-section">
     <h1>Contact</h1>
     <p>Get in touch with me. You can reach me via email or through my social media profiles.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

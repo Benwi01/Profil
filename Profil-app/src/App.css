@@ -1,42 +1,147 @@
-#root {
-  max-width: 1280px;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Light blue background color for the entire page */
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+}
+
+header {
+  background-color: #007bff; /* Solid blue background color */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  color: #fff; /* White color for better contrast */
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+footer {
+  background-color: #007bff; /* Solid blue background color */
+  color: white;
+  padding: 10px 0;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: #007bff; /* Professional color */
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+a:hover {
+  color: #0056b3;
 }
 
-.card {
-  padding: 2em;
+.section {
+  height: 100vh; /* Each section fills the entire viewport */
+  padding: 100px 20px;
+  border-bottom: none; /* Remove border to avoid visible edges */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.read-the-docs {
-  color: #888;
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%; /* Center content vertically */
+}
+
+.profile-pic {
+  border-radius: 50%; /* This makes the image round */
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  object-fit: cover; /* Ensures the image does not look stretched */
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.description {
+  max-width: 600px;
+}
+
+.description h1 {
+  margin-top: 0;
+  color: #007bff; /* Professional color */
+}
+
+.description p {
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Center content vertically */
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #007bff; /* Professional color */
+}
+
+.project-card p {
+  margin: 10px 0;
+}
+
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
 }

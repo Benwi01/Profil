@@ -1,37 +1,37 @@
 .navbar {
-    background-color: #007bff; /* Solid blue background color */
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
+    background: transparent; /* Transparent background initially */
+    color: white;
+    padding: 10px 0;
     z-index: 1000;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background: linear-gradient(135deg, #004d99, #00b3b3); /* Semi-transparent background when scrolled */
   }
   
   .navbar ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
   }
   
   .navbar li {
-    display: inline;
+    margin: 0 15px;
   }
   
   .navbar a {
-    display: block;
     color: white;
-    text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+    transition: color 0.3s ease;
   }
   
   .navbar a:hover {
-    background-color: #fff;
-    color: #007bff;
-    border-radius: 4px;
+    color: rgb(0, 0, 0);
   }

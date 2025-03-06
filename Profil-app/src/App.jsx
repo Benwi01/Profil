@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import NavBar from './components/NavBar.jsx';
 import './App.css';
-import profilePic from '/Profilepic.jpg'; // Make sure to place your image in this path
+import profilePic from '/Profilepic.jpg'; // Corrected path
 
 const Home = () => (
-  <section id="home" className="section">
+  <section id="home" className="section flashy-home">
     <div className="home-content">
-      <img src={profilePic} alt="Profile" className="profile-pic" />
-      <div className="description">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I'm [Your Name], a passionate developer with experience in [Your Skills/Technologies]. I love creating innovative solutions and working on exciting projects. Feel free to explore my portfolio and get in touch!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <img src={profilePic} alt="Profile" className="profile-pic animated fadeIn" />
+      <div className="description animated fadeIn">
+        <h1 className="animated bounceIn">Welcome to My Portfolio</h1>
+        <p className="animated fadeInUp">Hello! I'm [Your Name], a passionate developer with experience in [Your Skills/Technologies]. I love creating innovative solutions and working on exciting projects. Feel free to explore my portfolio and get in touch!</p>
+        <p className="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
     </div>
   </section>
@@ -62,6 +62,13 @@ const App = () => {
           section.classList.remove('visible');
         }
       });
+
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > windowHeight - 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -74,9 +81,6 @@ const App = () => {
 
   return (
     <div>
-      <header>
-        <h1>My Portfolio</h1>
-      </header>
       <NavBar />
       <Home />
       <Projects />

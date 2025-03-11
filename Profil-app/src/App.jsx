@@ -9,8 +9,8 @@ const Home = () => (
       <img src={profilePic} alt="Profile" className="profile-pic animated fadeIn" />
       <div className="description animated fadeIn">
         <h1 className="animated bounceIn">Hej! Mit navn er Benjamin Wiese</h1>
-        <p className="animated fadeInUp"> I'm a passionate developer with experience in [Your Skills/Technologies]. I love creating innovative solutions and working on exciting projects. Feel free to explore my portfolio and get in touch!</p>
-        <p className="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p className="animated fadeInUp"> Jeg studerer IT-Arkitektur på Aarhus Erhvervsakademi, og er i gang med 4.semester. Jeg er en meget passioneret omkring softwareudvikling og har både erfaring med back-end og front-end. Jeg elsker at udvikle kreative løsninger, der giver en værdi for brugerne.</p>
+        
       </div>
     </div>
   </section>
@@ -21,60 +21,48 @@ const Projects = () => (
     <h1>Projekter</h1>
     <div className="projects-grid">
       <div className="project-card">
-        <h2>Project 1</h2>
-        <p>This is a small description of Project 1. It highlights the main features and technologies used.</p>
+        <h2>Medicin Ordinationsprojekt</h2>
+        <p>Et medicin ordinationsprojekt udviklet i C# og ASP.NET. Funktionerne består at at kunne oprette, slette og redigere ordinationer til patienter.</p>
         <div className="project-logos">
+          <img src="csharp-logo.svg" alt="C#" className="tech-logo" />
+          <img src="html-logo.svg" alt="HTML" className="tech-logo" />
+          <img src="dotnet-logo.svg" alt=".NET" className="tech-logo" />
+          <img src="css-logo.svg" alt="CSS" className="tech-logo" />
+        </div>
+        <div className="project-buttons">
+          <a href="https://github.com/Levinuet/OrdinationMedication" className="btn github-btn" target="_blank" rel="noopener noreferrer">
+            <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
+          </a>
+        </div>
+      </div>
+      <div className="project-card">
+        <h2>Reddit Projekt</h2>
+        <p>En klon af Reddit udviklet med C# og entity framework. Projektets funktionaliteter er at oprette og slette posts, samt at kunne kommentere på dem.</p>
+        <div className="project-logos">
+          <img src="dotnet-logo.svg" alt=".NET" className="tech-logo" />
+          <img src="csharp-logo.svg" alt="C#" className="tech-logo" />
+          <img src="css-logo.svg" alt="CSS" className="tech-logo" />
+          <img src="html-logo.svg" alt="HTML" className="tech-logo" />
+        </div>
+        <div className="project-buttons">
+          <a href="https://github.com/Benwi01/Redditclone" className="btn github-btn" target="_blank" rel="noopener noreferrer">
+            <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
+          </a>
+        </div>
+      </div>
+      <div className="project-card">
+        <h2>Full Stack tilmeldingssystem til Cirkus Sumarrum Børneklub</h2>
+        <p>Som eksamensprojekt i 2.Semester har mig og min studiegruppe udviklet en full-stack Blazor applikation for Muskelsvindsfonden. Systemet håndterer tilmelding samt administration af børnepasning for de frivillige der arbejder på Cirkussummarum.</p>
+        <div className="project-logos">
+          <img src="css-logo.svg" alt="CSS" className="tech-logo" />
+          <img src="mongodb-logo.svg" alt="MongoDB" className="tech-logo" />
+          <img src="dotnet-logo.svg" alt=".NET" className="tech-logo" />
           <img src="csharp-logo.svg" alt="C#" className="tech-logo" />
           <img src="javascri-logo.svg" alt="JavaScript" className="tech-logo" />
           <img src="html-logo.svg" alt="HTML" className="tech-logo" />
         </div>
         <div className="project-buttons">
-          <a href="https://github.com/yourusername/project1" className="btn github-btn" target="_blank" rel="noopener noreferrer">
-            <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
-          </a>
-          <a href="#project1" className="btn view-btn">View Project</a>
-        </div>
-      </div>
-      <div className="project-card">
-        <h2>Project 2</h2>
-        <p>This is a small description of Project 2. It highlights the main features and technologies used.</p>
-        <div className="project-logos">
-          <img src="dotnet-logo.svg" alt=".NET" className="tech-logo" />
-          <img src="mongodb-logo.svg" alt="MongoDB" className="tech-logo" />
-          <img src="javascri-logo.svg" alt="JavaScript" className="tech-logo" />
-        </div>
-        <div className="project-buttons">
-          <a href="https://github.com/yourusername/project2" className="btn github-btn" target="_blank" rel="noopener noreferrer">
-            <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
-          </a>
-          <a href="#project2" className="btn view-btn">View Project</a>
-        </div>
-      </div>
-      <div className="project-card">
-        <h2>Project 3</h2>
-        <p>This is a small description of Project 3. It highlights the main features and technologies used.</p>
-        <div className="project-logos">
-          <img src="css-logo.svg" alt="CSS" className="tech-logo" />
-          <img src="javascri-logo.svg" alt="JavaScript" className="tech-logo" />
-          <img src="html-logo.svg" alt="HTML" className="tech-logo" />
-        </div>
-        <div className="project-buttons">
-          <a href="https://github.com/yourusername/project3" className="btn github-btn" target="_blank" rel="noopener noreferrer">
-            <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
-          </a>
-          <a href="#project3" className="btn view-btn">View Project</a>
-        </div>
-      </div>
-      <div className="project-card">
-        <h2>Project 4</h2>
-        <p>This is a small description of Project 3. It highlights the main features and technologies used.</p>
-        <div className="project-logos">
-          <img src="css-logo.svg" alt="CSS" className="tech-logo" />
-          <img src="javascri-logo.svg" alt="JavaScript" className="tech-logo" />
-          <img src="html-logo.svg" alt="HTML" className="tech-logo" />
-        </div>
-        <div className="project-buttons">
-          <a href="https://github.com/yourusername/project3" className="btn github-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Levinuet/CirkusSummarum" className="btn github-btn" target="_blank" rel="noopener noreferrer">
             <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
           </a>
           <a href="#project3" className="btn view-btn">View Project</a>
@@ -88,9 +76,21 @@ const Projects = () => (
 const Contact = () => (
   <section id="contact" className="section contact-section">
     <h1>Kontakt mig</h1>
-    <p>Get in touch with me. You can reach me via email or through my social media profiles.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Hvis du leder efter en praktikant med gåpåmod og stor interesse for softwareudvikling og IT-Arkitektur. Så leder jeg i øjeblikket efter en praktikplads.</p>
+    <h2>Benjamin Damholt Ruders Wiese</h2>
+    <div className="contact-info">
+      <div className="contact-buttons">
+        <a href="https://www.linkedin.com/in/benjamin-wiese-b56b38354/" className="btn contact-btn" target="_blank" rel="noopener noreferrer">
+          <img src="LinkedIn.svg" alt="LinkedIn" className="contact-logo" />LinkedIn
+        </a>
+        <a href="https://github.com/Benwi01" className="btn contact-btn" target="_blank" rel="noopener noreferrer">
+          <img src="github-logo.svg" alt="GitHub" className="contact-logo" />Github
+        </a>
+      </div>
+      <p><img src="email-logo.svg" alt="Email" className="contact-logo" /> Benjamin060101@gmail.com</p>
+      <p><img src="phone-logo.svg" alt="Phone" className="contact-logo" /> +45 20950151</p>
+      <p><img src="location-logo.svg" alt="Location" className="contact-logo" /> Aarhus C, DK</p>
+    </div>
   </section>
 );
 

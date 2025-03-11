@@ -2,7 +2,7 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff; /* Light blue background color for the entire page */
+  background-color: #ffffff;
   color: #333;
   scroll-behavior: smooth;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background-color: #007bff; /* Solid blue background color */
+  background-color: #007bff;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -26,13 +26,13 @@ header {
 }
 
 header h1 {
-  color: #fff; /* White color for better contrast */
+  color: #fff;
   font-size: 2.5rem;
   margin: 0;
 }
 
 footer {
-  background: linear-gradient(135deg, #004d99, #00b3b3); /* Solid blue background color */
+  background: linear-gradient(135deg, #991200, #b37400);
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -40,10 +40,11 @@ footer {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
+  margin-bottom: 20px; /* Add margin-bottom for better spacing */
 }
 
 a {
-  color: #007bff; /* Professional color */
+  color: #007bff;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -53,9 +54,9 @@ a:hover {
 }
 
 .section {
-  height: 60vh; /* Each section fills the entire viewport */
   padding: 100px 20px;
-  border-bottom: none; /* Remove border to avoid visible edges */
+  margin-bottom: 40px; /* Add margin-bottom for better spacing between sections */
+  border-bottom: none;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -71,52 +72,21 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100%; /* Center content vertically */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes bounceIn {
-  from {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+  height: 100%;
 }
 
 .flashy-home {
-  background: linear-gradient(135deg, #004d99, #00b3b3); /* Professional color scheme */
+  background: linear-gradient(135deg, #991200, #b37400);
   color: white;
   text-align: center;
   padding: 50px 0;
-  height: 100vh; /* Fill the entire viewport */
+  height: 100vh;
 }
 
 .home-title {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #fff; /* White color for better contrast */
+  color: #fff;
 }
 
 .profile-pic {
@@ -144,13 +114,13 @@ a:hover {
 }
 
 .profile-pic {
-  border-radius: 50%; /* This makes the image round */
+  border-radius: 50%;
   width: 400px;
   height: 400px;
   margin-right: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  object-fit: cover; /* Ensures the image does not look stretched */
+  object-fit: cover;
 }
 
 .profile-pic:hover {
@@ -163,7 +133,7 @@ a:hover {
 
 .description h1 {
   margin-top: 0;
-  color: #ffffff; 
+  color: #ffffff;
   font-size: 2.2rem;
 }
 
@@ -177,9 +147,9 @@ a:hover {
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Reduce the gap between project cards */
+  gap: 20px; /* Increase the gap between project cards */
   justify-content: center;
-  align-items: flex-start; /* Align items to the start to remove extra space */
+  align-items: flex-start;
 }
 
 .project-card {
@@ -188,11 +158,11 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 45%; /* Make the project cards bigger */
-  margin-bottom: 10px; /* Reduce the bottom margin */
+  width: 45%;
+  margin-bottom: 20px; /* Increase the bottom margin */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensure equal height */
+  justify-content: space-between;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -203,7 +173,7 @@ a:hover {
 
 .project-card h2 {
   margin-top: 0;
-  color: #333; 
+  color: #333;
 }
 
 .project-card p {
@@ -211,7 +181,7 @@ a:hover {
 }
 
 .project-card a {
-  color: white; 
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -231,7 +201,7 @@ a:hover {
 .projects-section h1, .contact-section h1 {
   font-size: 5rem;
   margin-bottom: 20px;
-  color: #333; 
+  color: #333;
 }
 
 .contact-section h2 {
@@ -259,7 +229,7 @@ a:hover {
 }
 
 .contact-buttons a {
-  color: white; 
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -301,7 +271,7 @@ a:hover {
 }
 
 .btn:hover {
-  background: linear-gradient(135deg, #004d99, #00b3b3);
+  background: linear-gradient(135deg, #991200, #b37400);
   transform: scale(1.05);
 }
 

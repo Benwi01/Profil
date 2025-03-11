@@ -65,7 +65,6 @@ const Projects = () => (
           <a href="https://github.com/Levinuet/CirkusSummarum" className="btn github-btn" target="_blank" rel="noopener noreferrer">
             <img src="github-logo.svg" alt="GitHub" className="github-logo" /> GitHub
           </a>
-          <a href="#project3" className="btn view-btn">View Project</a>
         </div>
       </div>
       {/* Add more project cards as needed */}

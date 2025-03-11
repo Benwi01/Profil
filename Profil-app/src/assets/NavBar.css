@@ -10,7 +10,7 @@
   }
   
   .navbar.scrolled {
-    background: linear-gradient(135deg, #004d99, #00b3b3); /* Semi-transparent background when scrolled */
+    background: linear-gradient(135deg, #991200, #b37400); /* Semi-transparent background when scrolled */
   }
   
   .navbar ul {

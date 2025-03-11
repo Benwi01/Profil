@@ -1,6 +1,7 @@
 {
   "name": "profil-app",
   "private": true,
+  "homepage": "https://benwi01.github.io/Profil",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,8 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "react-scripts start"
-
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",

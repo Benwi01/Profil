@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import NavBar from './components/NavBar.jsx';
 import './App.css';
-import profilePic from '/Profilepic.jpg'; // Corrected path
+import profilePic from '/Profilepic.jpg';
 
 const Home = () => (
   <section id="home" className="section flashy-home">

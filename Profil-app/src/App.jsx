@@ -130,7 +130,7 @@ const App = () => {
       <Projects />
       <Contact />
       <footer>
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2025 Benjamin Wiese. All rights reserved.</p>
       </footer>
     </div>
   );

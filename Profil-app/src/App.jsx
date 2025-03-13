@@ -9,7 +9,7 @@ const Home = () => (
       <img src={profilePic} alt="Profile" className="profile-pic animated fadeIn" />
       <div className="description animated fadeIn">
         <h1 className="animated bounceIn">Hej! Mit navn er Benjamin Wiese</h1>
-        <p className="animated fadeInUp"> Jeg studerer IT-Arkitektur på Aarhus Erhvervsakademi, og er i gang med 4.semester. Jeg er en meget passioneret omkring softwareudvikling og har både erfaring med back-end og front-end. Jeg elsker at udvikle kreative løsninger, der giver en værdi for brugerne.</p>
+        <p className="animated fadeInUp"> Jeg studerer IT-Arkitektur på Aarhus Erhvervsakademi, og er i gang med 4.semester. Jeg er meget passioneret omkring softwareudvikling og har både erfaring med back-end og front-end. Jeg elsker at udvikle kreative løsninger, der giver en værdi for brugerne.</p>
         
       </div>
     </div>

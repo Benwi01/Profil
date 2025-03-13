@@ -1,7 +1,7 @@
 {
   "name": "profil-app",
   "private": true,
-  "homepage": "http://benjaminwiese.dk/",
+  "homepage": "http://benjaminwiese.dk",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
